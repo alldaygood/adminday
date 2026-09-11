@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0c0c0e">
 <meta name="description" content="คำนวณวันหมดอายุแพ็กเกจ พร้อมวันแถมจากโปรโมชั่นและวันที่เริ่มต้นที่คุณเลือก">
-<title>BIZ-G DAY — ระบบคำนวณวันหมดอายุ</title>
+<title>BIZ-G DAY</title>
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -225,12 +225,11 @@ async function copyText(value) {
   return false;
 }
 function resetAfterCopy() {
-  selectedDays = 1;
-  $('customDays').value = '';
+  // คงจำนวนวันแพ็กเกจเดิมไว้ รีเซ็ตเฉพาะโปรโมชั่น
   $('promoEnabled').checked = false;
   $('promoDays').value = '1';
   render();
-  showToast('คัดลอกเรียบร้อยแล้ว · รีเซ็ตเป็น 1 วันและปิดโปรแล้ว');
+  showToast('คัดลอกเรียบร้อยแล้ว · ปิดโปรและรีเซ็ตวันฟรีเป็น 1 วันแล้ว');
 }
 
 makePackages(packages, 'dayGrid'); makePackages(extraPackages, 'extraDays');
