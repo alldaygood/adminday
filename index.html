@@ -266,9 +266,15 @@ async function copyText(value) {
 }
 function resetAfterCopy(options = {}) {
   // คงแพ็กเกจที่เลือกไว้ตามเดิม รีเซ็ตโปรหลังคัดลอกสำเร็จ
+  // ถ้าใช้โหมดเลือกวันเอง ให้กลับมาเริ่มจากวันนี้อัตโนมัติหลังคัดลอก
   const hadPromo = $('promoEnabled').checked;
+  const wasCustomDate = !isTodayMode;
   $('promoEnabled').checked = false;
   $('promoDays').value = '1';
+  if (wasCustomDate) {
+    isTodayMode = true;
+    $('startDate').value = D.today();
+  }
   if (options.access === true) resetAccessForm();
   render();
   showToast(options.access === true ? 'คัดลอกแล้ว · ล้างข้อมูลเข้าใช้งานเรียบร้อย' : (hadPromo ? 'คัดลอกเรียบร้อยแล้ว · ปิดโปรและคืนวันฟรีเป็น 1 วันแล้ว' : 'คัดลอกเรียบร้อยแล้ว'));
