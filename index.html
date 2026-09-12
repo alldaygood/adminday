@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{color-scheme:dark;--bg:#0c0c0e;--panel:#19191c;--inset:#111113;--line:#313135;--text:#f4f4f5;--muted:#a6a6af;--accent:#ff3b42;--accent-light:#ff8a8e;--radius:24px;--ease:cubic-bezier(.22,1,.36,1)}
-*{box-sizing:border-box}html{min-width:280px;scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;background:radial-gradient(ellipse at 90% -10%,#ff33330b,transparent 45%),var(--bg);color:var(--text);font:14px/1.65 'Prompt',Tahoma,sans-serif;min-height:100vh}body:before{content:'';position:absolute;inset:0 0 auto;height:480px;background-image:linear-gradient(#ffffff03 1px,transparent 1px),linear-gradient(90deg,#ffffff03 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:-1}button,input,select,textarea{font:inherit}button,a,input,select,textarea,summary{-webkit-tap-highlight-color:transparent;outline-offset:4px}button,a,summary{touch-action:manipulation}button{color:inherit;cursor:pointer;transition:background .2s,border-color .2s,box-shadow .2s,transform .2s var(--ease)}button:disabled{cursor:not-allowed;opacity:.4}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent-light)}button:active:not(:disabled){transform:scale(.98)}a{color:inherit;text-decoration:none}svg{display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}[hidden]{display:none!important}h1,h2,h3,p{margin-top:0}.shell{max-width:1280px;margin:auto;padding:0 44px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:96px;border-bottom:1px solid #29292e}.brand{display:flex;align-items:center;gap:13px;line-height:1.2;font-family:'Kanit',sans-serif;font-size:23px;letter-spacing:1.5px}.brand img{object-fit:contain;border-radius:13px;background:#242428;border:1px solid #39393d;box-shadow:0 4px 12px #0004}.brand b{color:var(--accent);font-weight:500}.brand small{display:block;color:#a4a4ad;font-family:'Prompt',sans-serif;font-size:10px;letter-spacing:.2px;margin-top:6px}.top-right{display:flex;align-items:center;gap:24px}.timezone{display:flex;align-items:center;white-space:nowrap;font-size:10px;color:var(--muted)}.timezone i,.live-label i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent);margin-right:8px;box-shadow:0 0 0 3px #ff3b4212}.text-button{border:1px solid #343438;background:#1d1d20;border-radius:10px;padding:7px 14px;color:#c2c2c8;min-height:42px;font-size:11px;display:flex;align-items:center;gap:10px}.text-button span{font-size:19px;line-height:1}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:36px 0 30px}.eyebrow{font-family:'Kanit',sans-serif;font-size:10px;letter-spacing:2.7px;color:#b4b4bd;margin:0 0 9px;font-weight:400}.page-heading .eyebrow:before{content:'';display:inline-block;width:20px;height:2px;background:var(--accent);margin-right:10px;vertical-align:middle}h1{font-weight:600;letter-spacing:-1px;font-size:clamp(26px,3.2vw,38px);line-height:1.45;margin:0 0 10px}.title-dot{color:var(--accent);margin-left:4px}.subtitle{color:var(--muted);font-size:12px;line-height:1.9;margin:0}.heading-label{display:flex;align-items:center;gap:13px;white-space:nowrap;font-size:9px;letter-spacing:2px;color:#9999a3}.heading-label b{display:grid;place-items:center;width:45px;height:45px;border:1px solid #3d3d42;border-radius:50%;font:18px 'Kanit',sans-serif;color:var(--accent-light);box-shadow:inset 0 0 0 5px var(--bg),inset 0 0 0 6px #29292e}.workspace{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:26px;align-items:start}.form-card,.result-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:0 14px 35px #00000035,inset 0 1px #ffffff03;min-width:0}.form-card{padding:28px}.form-section+.form-section{border-top:1px solid var(--line);padding-top:23px;margin-top:23px}.section-heading{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin:0 0 16px}.step{display:grid;place-items:center;width:27px;height:27px;flex-shrink:0;color:#dddde1;background:#29292e;border:1px solid #424247;border-radius:8px;font:11px 'Kanit',sans-serif}.section-heading h2{font-size:14px;font-weight:500;margin:0}.small-note{margin-left:auto;color:var(--muted);font-size:10px}.segmented{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;background:#101012;border:1px solid #2a2a2f;border-radius:13px;margin-bottom:12px}.segmented button{min-height:42px;border:1px solid transparent;border-radius:9px;background:transparent;color:var(--muted);font-size:12px}.segmented button.active{background:#303034;border-color:#4d4d52;color:white;box-shadow:0 3px 8px #0004}.segmented button.active:before{content:'';display:inline-block;vertical-align:middle;width:5px;height:5px;background:var(--accent);border-radius:50%;margin-right:8px}.today-display{display:flex;align-items:center;gap:14px;border:1px solid #39393d;border-radius:14px;padding:16px;background:linear-gradient(130deg,#262629,#202023);min-height:84px}.calendar-icon{width:29px;height:29px;color:var(--accent-light)}.today-display small{display:block;font-size:10px;color:var(--muted)}.today-display strong{display:block;font-size:14px;font-weight:500;margin-top:3px}.pill{margin-left:auto;border:1px solid #4c3033;background:#352225;color:#ffb0b4;border-radius:7px;padding:3px 8px;white-space:nowrap;font-size:9px}label{display:block;font-size:12px;margin:0 0 7px}.muted{color:var(--muted)}input,textarea{display:block;width:100%;min-width:0;border:1px solid #45454b;border-radius:11px;background:#101013;color:var(--text);padding:11px 13px;transition:border-color .2s,box-shadow .2s;min-height:45px}input::placeholder{color:#9999a3}input:focus{border-color:#c85c61}input[aria-invalid=true]{border-color:var(--accent);box-shadow:0 0 0 3px #ff3b4212}input[type=date]{font-variant-numeric:tabular-nums;max-width:100%;font-size:16px;min-height:46px}input[type=date]::-webkit-calendar-picker-indicator{opacity:.8;cursor:pointer}.field-help{color:var(--muted);font-size:10px;margin:7px 0 0;line-height:1.8}.day-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.day-btn{position:relative;background:#222225;border:1px solid #38383e;border-radius:12px;padding:12px 4px;min-height:68px;box-shadow:0 2px 4px #0002}.day-btn strong{display:block;font:500 17px 'Kanit',Tahoma,sans-serif;line-height:1.35}.day-btn small{display:block;font-size:9px;color:#a8a8b1;margin-top:4px}.day-btn.active{border-color:#ff555a;background:linear-gradient(145deg,#4d262a,#342124);box-shadow:inset 0 1px #ffffff08,0 0 0 1px #ff3b4210}.day-btn.active:after{content:'';position:absolute;top:8px;right:8px;width:4px;height:4px;border-radius:50%;background:var(--accent)}.day-btn.active strong{color:#fff3f4}.day-btn.active small{color:#e5acaf}.more-button{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:44px;padding:10px;background:transparent;border:0;font-size:10px;color:#b6b6be}.extra-days{padding:0 0 17px}.custom-days-row{display:flex;align-items:center;justify-content:space-between;gap:14px}.custom-days-row label{font-size:11px;color:#b7b7c0;margin:0}.number-wrap{position:relative;width:126px;flex-shrink:0}.number-wrap input{padding-right:39px;font-size:16px}.number-wrap>span{position:absolute;right:13px;top:13px;pointer-events:none;color:var(--muted);font-size:11px}input[type=number]{appearance:textfield;-moz-appearance:textfield}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.gift-label{margin-left:auto;font:9px 'Kanit',sans-serif;letter-spacing:1px;color:#c9c9d0}.promo-toggle{position:relative;display:flex;align-items:center;gap:13px;cursor:pointer;background:#232326;border:1px solid #45454a;border-radius:15px;padding:17px 15px;margin:0;transition:background .2s,border-color .2s,box-shadow .2s}.promo-toggle.enabled{background:linear-gradient(110deg,#3b2528,#282023);border-color:#b54349;box-shadow:0 0 0 3px #ff3b4208}.promo-toggle input{position:absolute;width:24px;height:24px;min-height:0;opacity:0;left:15px;top:22px;margin:0;padding:0;cursor:pointer}.checkbox-art{width:23px;height:23px;border-radius:7px;flex-shrink:0;border:1px solid #71717a;background:#151518;color:transparent;display:grid;place-items:center;font-size:15px;transition:background .18s,border-color .18s,color .18s}.promo-toggle input:checked+.checkbox-art{border-color:#ff6a70;background:var(--accent);color:white}.promo-toggle input:focus-visible+.checkbox-art{outline:2px solid var(--accent-light);outline-offset:4px}.promo-copy{min-width:0;flex:1}.promo-copy strong{display:block;font-size:12px;font-weight:500;color:#f4f4f5}.promo-copy small{display:block;color:#b6b6bf;font-size:9px;margin-top:4px}.bonus-badge{flex-shrink:0;white-space:nowrap;font:500 16px 'Kanit',sans-serif;color:#c6c6cc;transition:color .2s}.enabled .bonus-badge{color:var(--accent-light)}.promo-details{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:15px}.promo-details label{margin:0;font-size:11px}.promo-details .field-help{flex-basis:100%;margin:0}.count-rule{display:flex;gap:12px;align-items:flex-start;padding:17px 15px;background:#121214;border:1px solid #333338;border-radius:12px;margin-top:24px}.rule-icon{display:grid;place-items:center;border:1px solid #4b363a;border-radius:7px;width:23px;height:23px;color:#ff9296;flex-shrink:0;font-size:16px}.count-rule strong{display:block;font-size:10px;font-weight:500;color:#d1d1d8}.count-rule p{font-size:9px;color:var(--muted);line-height:1.95;margin:5px 0 0}.result-column{position:sticky;top:24px;min-width:0}.result-card{position:relative;padding:27px;background:linear-gradient(150deg,#252528,#1b1b1e 60%);overflow:hidden}.result-card:before{content:'';position:absolute;top:0;left:27px;right:27px;height:2px;background:linear-gradient(90deg,var(--accent),#ff3b4210)}.receipt-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}.receipt-heading .eyebrow{font-size:9px;margin:0;color:#b2b2bc;letter-spacing:2px}.live-label{font-size:9px;color:var(--muted)}.result-card h2{font-size:21px;font-weight:500;margin:12px 0 22px}.expiry-block{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;padding:26px 10px 22px;background:radial-gradient(ellipse at top,#82252d40,transparent 90%),#21181b;border:1px solid #71383e;border-radius:18px;text-align:center;box-shadow:inset 0 1px #ffffff04}.expiry-block>span:first-child{font-size:11px;color:#e2afb3}.expiry-block>strong{font:500 clamp(30px,3.4vw,44px)/1.2 'Kanit',Tahoma,sans-serif;letter-spacing:.8px;color:#ff757c;font-variant-numeric:tabular-nums;white-space:nowrap}.expire-long{font-size:10px;color:#cba7ab;min-height:18px}.duration-equation{display:flex;align-items:center;justify-content:space-between;gap:7px;padding:24px 3px;border-bottom:1px dashed #4a4a50}.duration-equation>div{text-align:center;min-width:0}.duration-equation strong{font:500 30px/1.25 'Kanit',Tahoma,sans-serif;display:block;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.duration-equation span{display:block;font-size:9px;color:var(--muted);margin-top:6px}.duration-equation>b{font-size:18px;font-weight:400;color:#8e8e99}.bonus-number strong{color:#bfbfc8}.total-number strong{color:#ff7379}.timeline{padding:24px 0 8px}.timeline>div{position:relative;display:grid;grid-template-columns:12px 1fr auto;align-items:start;gap:10px;padding-bottom:24px;font-size:11px}.timeline i{position:relative;z-index:1;margin-top:5px;border:2px solid #9898a3;width:9px;height:9px;border-radius:50%;background:#222225}.timeline>div:first-child:after{content:'';position:absolute;left:4px;top:14px;bottom:0;width:1px;background:#4c4c54}.timeline>div:last-child{padding-bottom:0}.timeline>div:last-child i{border-color:var(--accent);background:var(--accent)}.timeline span{color:var(--muted)}.timeline strong{font-weight:500;font-variant-numeric:tabular-nums}.timeline-value{text-align:right;min-width:0}.calculation-note{border:1px solid #38383e;background:#202023;color:#bdbdc6;border-radius:11px;font-size:10px;padding:12px;margin:12px 0 22px;line-height:1.9;min-height:64px;overflow-wrap:anywhere}.copy-actions{display:grid;gap:10px}.primary-button,.secondary-button{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:49px;padding:12px;border-radius:12px;font-size:12px;font-weight:500}.primary-button{background:linear-gradient(180deg,#f6444b,#d82b34);border:1px solid #ff666c;color:#fff;box-shadow:0 6px 20px #e72f371d,inset 0 1px #ffffff24}.primary-button svg,.secondary-button svg{width:18px;height:18px}.secondary-button{background:#2c2c30;border:1px solid #494950;color:#e1e1e7}.receipt-footer{text-align:center;font-size:9px;color:#a0a0ac;margin:14px 0 0}.how-it-works{display:flex;align-items:flex-start;gap:12px;padding:21px 8px}.info-icon{border:1px solid #62626d;border-radius:50%;font:12px/19px Georgia,serif;color:#c1c1ca;width:20px;height:20px;text-align:center;flex-shrink:0}.how-it-works h3{font-size:11px;font-weight:500;margin:0 0 6px;color:#d0d0d8}.how-it-works p{font-size:10px;line-height:1.95;margin:0;color:var(--muted)}.footer{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-top:1px solid #29292e;padding:23px 0;margin-top:35px;color:#9a9aa6;font-size:10px}.footer-dot{padding:0 7px;color:#ed5c62}.support{position:relative;text-align:right}.support summary{list-style:none;cursor:pointer;min-height:30px}.support summary::-webkit-details-marker{display:none}.support summary span{margin-left:8px}.support nav{display:grid;gap:4px;background:#1c1c20;border:1px solid #38383e;border-radius:12px;margin-top:10px;padding:10px;min-width:200px}.support nav a,.support nav button{border:0;background:transparent;border-radius:7px;color:#d2d2da;font-size:11px;text-align:left;padding:11px 10px;min-height:42px}.toast{position:fixed;bottom:max(24px,env(safe-area-inset-bottom));left:50%;transform:translate(-50%,12px);max-width:calc(100% - 32px);padding:13px 21px;background:#eeeeF0;border:1px solid #fff;border-radius:12px;color:#222228;box-shadow:0 10px 35px #0008;font-size:12px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s var(--ease);z-index:50}.toast.show{opacity:1;transform:translate(-50%,0)}.error-message{background:#3d2026;border:1px solid #a34952;color:#ffd4d8;border-radius:11px;padding:12px;font-size:11px;overflow-wrap:anywhere}.result-card.invalid .expiry-block{opacity:.5}#manualCopyWrap{margin-top:16px}#manualCopyWrap textarea{font-size:12px;resize:vertical}.page-heading,.form-card,.result-column{animation:enter .45s var(--ease) both}.form-card{animation-delay:.06s}.result-column{animation-delay:.12s}#promoDetails:not([hidden]),#customDateWrap:not([hidden]),#extraDays:not([hidden]){animation:enter .22s var(--ease) both}@keyframes enter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+*{box-sizing:border-box}html{min-width:280px;scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;background:radial-gradient(ellipse at 90% -10%,#ff33330b,transparent 45%),var(--bg);color:var(--text);font:14px/1.65 'Prompt',Tahoma,sans-serif;min-height:100vh}body:before{content:'';position:absolute;inset:0 0 auto;height:480px;background-image:linear-gradient(#ffffff03 1px,transparent 1px),linear-gradient(90deg,#ffffff03 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:-1}button,input,select,textarea{font:inherit}button,a,input,select,textarea,summary{-webkit-tap-highlight-color:transparent;outline-offset:4px}button,a,summary{touch-action:manipulation}button{color:inherit;cursor:pointer;transition:background .2s,border-color .2s,box-shadow .2s,transform .2s var(--ease)}button:disabled{cursor:not-allowed;opacity:.4}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent-light)}button:active:not(:disabled){transform:scale(.98)}a{color:inherit;text-decoration:none}svg{display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}[hidden]{display:none!important}h1,h2,h3,p{margin-top:0}.shell{max-width:1280px;margin:auto;padding:0 44px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:96px;border-bottom:1px solid #29292e}.brand{display:flex;align-items:center;gap:13px;line-height:1.2;font-family:'Kanit',sans-serif;font-size:23px;letter-spacing:1.5px}.brand img{object-fit:contain;border-radius:13px;background:#242428;border:1px solid #39393d;box-shadow:0 4px 12px #0004}.brand b{color:var(--accent);font-weight:500}.brand small{display:block;color:#a4a4ad;font-family:'Prompt',sans-serif;font-size:10px;letter-spacing:.2px;margin-top:6px}.top-right{display:flex;align-items:center;gap:24px}.timezone{display:flex;align-items:center;white-space:nowrap;font-size:10px;color:var(--muted)}.timezone i,.live-label i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent);margin-right:8px;box-shadow:0 0 0 3px #ff3b4212}.text-button{border:1px solid #343438;background:#1d1d20;border-radius:10px;padding:7px 14px;color:#c2c2c8;min-height:42px;font-size:11px;display:flex;align-items:center;gap:10px}.text-button span{font-size:19px;line-height:1}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:36px 0 30px}.eyebrow{font-family:'Kanit',sans-serif;font-size:10px;letter-spacing:2.7px;color:#b4b4bd;margin:0 0 9px;font-weight:400}.page-heading .eyebrow:before{content:'';display:inline-block;width:20px;height:2px;background:var(--accent);margin-right:10px;vertical-align:middle}h1{font-weight:600;letter-spacing:-1px;font-size:clamp(26px,3.2vw,38px);line-height:1.45;margin:0 0 10px}.title-dot{color:var(--accent);margin-left:4px}.subtitle{color:var(--muted);font-size:12px;line-height:1.9;margin:0}.heading-label{display:flex;align-items:center;gap:13px;white-space:nowrap;font-size:9px;letter-spacing:2px;color:#9999a3}.heading-label b{display:grid;place-items:center;width:45px;height:45px;border:1px solid #3d3d42;border-radius:50%;font:18px 'Kanit',sans-serif;color:var(--accent-light);box-shadow:inset 0 0 0 5px var(--bg),inset 0 0 0 6px #29292e}.workspace{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:26px;align-items:start}.form-card,.result-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:0 14px 35px #00000035,inset 0 1px #ffffff03;min-width:0}.form-card{padding:28px}.form-section+.form-section{border-top:1px solid var(--line);padding-top:23px;margin-top:23px}.section-heading{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin:0 0 16px}.step{display:grid;place-items:center;width:27px;height:27px;flex-shrink:0;color:#dddde1;background:#29292e;border:1px solid #424247;border-radius:8px;font:11px 'Kanit',sans-serif}.section-heading h2{font-size:14px;font-weight:500;margin:0}.small-note{margin-left:auto;color:var(--muted);font-size:10px}.segmented{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;background:#101012;border:1px solid #2a2a2f;border-radius:13px;margin-bottom:12px}.segmented button{min-height:42px;border:1px solid transparent;border-radius:9px;background:transparent;color:var(--muted);font-size:12px}.segmented button.active{background:#303034;border-color:#4d4d52;color:white;box-shadow:0 3px 8px #0004}.segmented button.active:before{content:'';display:inline-block;vertical-align:middle;width:5px;height:5px;background:var(--accent);border-radius:50%;margin-right:8px}.today-display{display:flex;align-items:center;gap:14px;border:1px solid #39393d;border-radius:14px;padding:16px;background:linear-gradient(130deg,#262629,#202023);min-height:84px}.calendar-icon{width:29px;height:29px;color:var(--accent-light)}.today-display small{display:block;font-size:10px;color:var(--muted)}.today-display strong{display:block;font-size:14px;font-weight:500;margin-top:3px}.pill{margin-left:auto;border:1px solid #4c3033;background:#352225;color:#ffb0b4;border-radius:7px;padding:3px 8px;white-space:nowrap;font-size:9px}label{display:block;font-size:12px;margin:0 0 7px}.muted{color:var(--muted)}input,textarea{display:block;width:100%;min-width:0;border:1px solid #45454b;border-radius:11px;background:#101013;color:var(--text);padding:11px 13px;transition:border-color .2s,box-shadow .2s;min-height:45px}input::placeholder{color:#9999a3}input:focus{border-color:#c85c61}input[aria-invalid=true]{border-color:var(--accent);box-shadow:0 0 0 3px #ff3b4212}input[type=date]{font-variant-numeric:tabular-nums;max-width:100%;font-size:16px;min-height:46px}input[type=date]::-webkit-calendar-picker-indicator{opacity:.8;cursor:pointer}.field-help{color:var(--muted);font-size:10px;margin:7px 0 0;line-height:1.8}.day-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.day-btn{position:relative;background:#222225;border:1px solid #38383e;border-radius:12px;padding:12px 4px;min-height:68px;box-shadow:0 2px 4px #0002}.day-btn strong{display:block;font:500 17px 'Kanit',Tahoma,sans-serif;line-height:1.35}.day-btn small{display:block;font-size:9px;color:#a8a8b1;margin-top:4px}.day-btn.active{border-color:#ff555a;background:linear-gradient(145deg,#4d262a,#342124);box-shadow:inset 0 1px #ffffff08,0 0 0 1px #ff3b4210}.day-btn.active:after{content:'';position:absolute;top:8px;right:8px;width:4px;height:4px;border-radius:50%;background:var(--accent)}.day-btn.active strong{color:#fff3f4}.day-btn.active small{color:#e5acaf}.more-button{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:44px;padding:10px;background:transparent;border:0;font-size:10px;color:#b6b6be}.extra-days{padding:0 0 17px}.custom-days-row{display:flex;align-items:center;justify-content:space-between;gap:14px}.custom-days-row label{font-size:11px;color:#b7b7c0;margin:0}.number-wrap{position:relative;width:126px;flex-shrink:0}.number-wrap input{padding-right:39px;font-size:16px}.number-wrap>span{position:absolute;right:13px;top:13px;pointer-events:none;color:var(--muted);font-size:11px}input[type=number]{appearance:textfield;-moz-appearance:textfield}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.gift-label{margin-left:auto;font:9px 'Kanit',sans-serif;letter-spacing:1px;color:#c9c9d0}.promo-toggle{position:relative;display:flex;align-items:center;gap:13px;cursor:pointer;background:#232326;border:1px solid #45454a;border-radius:15px;padding:17px 15px;margin:0;transition:background .2s,border-color .2s,box-shadow .2s}.promo-toggle.enabled{background:linear-gradient(110deg,#3b2528,#282023);border-color:#b54349;box-shadow:0 0 0 3px #ff3b4208}.promo-toggle input{position:absolute;width:24px;height:24px;min-height:0;opacity:0;left:15px;top:22px;margin:0;padding:0;cursor:pointer}.checkbox-art{width:23px;height:23px;border-radius:7px;flex-shrink:0;border:1px solid #71717a;background:#151518;color:transparent;display:grid;place-items:center;font-size:15px;transition:background .18s,border-color .18s,color .18s}.promo-toggle input:checked+.checkbox-art{border-color:#ff6a70;background:var(--accent);color:white}.promo-toggle input:focus-visible+.checkbox-art{outline:2px solid var(--accent-light);outline-offset:4px}.promo-copy{min-width:0;flex:1}.promo-copy strong{display:block;font-size:12px;font-weight:500;color:#f4f4f5}.promo-copy small{display:block;color:#b6b6bf;font-size:9px;margin-top:4px}.bonus-badge{flex-shrink:0;white-space:nowrap;font:500 16px 'Kanit',sans-serif;color:#c6c6cc;transition:color .2s}.enabled .bonus-badge{color:var(--accent-light)}.promo-details{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:15px}.promo-details label{margin:0;font-size:11px}.promo-details .field-help{flex-basis:100%;margin:0}.count-rule{display:flex;gap:12px;align-items:flex-start;padding:17px 15px;background:#121214;border:1px solid #333338;border-radius:12px;margin-top:24px}.rule-icon{display:grid;place-items:center;border:1px solid #4b363a;border-radius:7px;width:23px;height:23px;color:#ff9296;flex-shrink:0;font-size:16px}.count-rule strong{display:block;font-size:10px;font-weight:500;color:#d1d1d8}.count-rule p{font-size:9px;color:var(--muted);line-height:1.95;margin:5px 0 0}.result-column{position:sticky;top:24px;min-width:0}.result-card{position:relative;padding:27px;background:linear-gradient(150deg,#252528,#1b1b1e 60%);overflow:hidden}.result-card:before{content:'';position:absolute;top:0;left:27px;right:27px;height:2px;background:linear-gradient(90deg,var(--accent),#ff3b4210)}.receipt-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}.receipt-heading .eyebrow{font-size:9px;margin:0;color:#b2b2bc;letter-spacing:2px}.live-label{font-size:9px;color:var(--muted)}.result-card h2{font-size:21px;font-weight:500;margin:12px 0 22px}.expiry-block{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;padding:26px 10px 22px;background:radial-gradient(ellipse at top,#82252d40,transparent 90%),#21181b;border:1px solid #71383e;border-radius:18px;text-align:center;box-shadow:inset 0 1px #ffffff04}.expiry-block>span:first-child{font-size:11px;color:#e2afb3}.expiry-block>strong{font:500 clamp(30px,3.4vw,44px)/1.2 'Kanit',Tahoma,sans-serif;letter-spacing:.8px;color:#ff757c;font-variant-numeric:tabular-nums;white-space:nowrap}.expire-long{font-size:10px;color:#cba7ab;min-height:18px}.duration-equation{display:flex;align-items:center;justify-content:space-between;gap:7px;padding:24px 3px;border-bottom:1px dashed #4a4a50}.duration-equation>div{text-align:center;min-width:0}.duration-equation strong{font:500 30px/1.25 'Kanit',Tahoma,sans-serif;display:block;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.duration-equation span{display:block;font-size:9px;color:var(--muted);margin-top:6px}.duration-equation>b{font-size:18px;font-weight:400;color:#8e8e99}.bonus-number strong{color:#bfbfc8}.total-number strong{color:#ff7379}.timeline{padding:24px 0 8px}.timeline>div{position:relative;display:grid;grid-template-columns:12px 1fr auto;align-items:start;gap:10px;padding-bottom:24px;font-size:11px}.timeline i{position:relative;z-index:1;margin-top:5px;border:2px solid #9898a3;width:9px;height:9px;border-radius:50%;background:#222225}.timeline>div:first-child:after{content:'';position:absolute;left:4px;top:14px;bottom:0;width:1px;background:#4c4c54}.timeline>div:last-child{padding-bottom:0}.timeline>div:last-child i{border-color:var(--accent);background:var(--accent)}.timeline span{color:var(--muted)}.timeline strong{font-weight:500;font-variant-numeric:tabular-nums}.timeline-value{text-align:right;min-width:0}.calculation-note{border:1px solid #38383e;background:#202023;color:#bdbdc6;border-radius:11px;font-size:10px;padding:12px;margin:12px 0 22px;line-height:1.9;min-height:64px;overflow-wrap:anywhere}.copy-actions{display:grid;gap:10px}.primary-button,.secondary-button{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:49px;padding:12px;border-radius:12px;font-size:12px;font-weight:500}.primary-button{background:linear-gradient(180deg,#f6444b,#d82b34);border:1px solid #ff666c;color:#fff;box-shadow:0 6px 20px #e72f371d,inset 0 1px #ffffff24}.primary-button svg{width:18px;height:18px}.secondary-button{background:#2c2c30;border:1px solid #494950;color:#e1e1e7}.receipt-footer{text-align:center;font-size:9px;color:#a0a0ac;margin:14px 0 0}.how-it-works{display:flex;align-items:flex-start;gap:12px;padding:21px 8px}.info-icon{border:1px solid #62626d;border-radius:50%;font:12px/19px Georgia,serif;color:#c1c1ca;width:20px;height:20px;text-align:center;flex-shrink:0}.how-it-works h3{font-size:11px;font-weight:500;margin:0 0 6px;color:#d0d0d8}.how-it-works p{font-size:10px;line-height:1.95;margin:0;color:var(--muted)}.footer{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-top:1px solid #29292e;padding:23px 0;margin-top:35px;color:#9a9aa6;font-size:10px}.footer-dot{padding:0 7px;color:#ed5c62}.support{position:relative;text-align:right}.support summary{list-style:none;cursor:pointer;min-height:30px}.support summary::-webkit-details-marker{display:none}.support summary span{margin-left:8px}.support nav{display:grid;gap:4px;background:#1c1c20;border:1px solid #38383e;border-radius:12px;margin-top:10px;padding:10px;min-width:200px}.support nav a,.support nav button{border:0;background:transparent;border-radius:7px;color:#d2d2da;font-size:11px;text-align:left;padding:11px 10px;min-height:42px}.toast{position:fixed;bottom:max(24px,env(safe-area-inset-bottom));left:50%;transform:translate(-50%,12px);max-width:calc(100% - 32px);padding:13px 21px;background:#eeeeF0;border:1px solid #fff;border-radius:12px;color:#222228;box-shadow:0 10px 35px #0008;font-size:12px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s var(--ease);z-index:50}.toast.show{opacity:1;transform:translate(-50%,0)}.error-message{background:#3d2026;border:1px solid #a34952;color:#ffd4d8;border-radius:11px;padding:12px;font-size:11px;overflow-wrap:anywhere}.result-card.invalid .expiry-block{opacity:.5}#manualCopyWrap{margin-top:16px}#manualCopyWrap textarea{font-size:12px;resize:vertical}.page-heading,.form-card,.result-column{animation:enter .45s var(--ease) both}.form-card{animation-delay:.06s}.result-column{animation-delay:.12s}#promoDetails:not([hidden]),#customDateWrap:not([hidden]),#extraDays:not([hidden]){animation:enter .22s var(--ease) both}@keyframes enter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
 @media(hover:hover){.day-btn:hover{border-color:#aa6067;background:#35282c;transform:translateY(-2px);box-shadow:0 5px 12px #0003}.primary-button:hover:not(:disabled){background:linear-gradient(180deg,#ff5259,#e93740);box-shadow:0 8px 24px #e72f3735;transform:translateY(-1px)}.secondary-button:hover:not(:disabled),.text-button:hover,.support nav a:hover,.support nav button:hover{background:#39393e;border-color:#6a6a74}.more-button:hover{color:#ff9ca0}.promo-toggle:hover{border-color:#a46b72}.segmented button:not(.active):hover{background:#252529;color:white}}
 @media(min-width:1600px){.shell{max-width:1400px;padding:0 60px}.page-heading{padding:43px 0 34px}.workspace{gap:32px;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}.form-card,.result-card{padding:32px}.day-btn{min-height:74px}.expiry-block>strong{font-size:48px}}
 @media(max-width:1050px){.shell{padding:0 28px}.workspace{gap:20px;grid-template-columns:minmax(0,1.13fr) minmax(0,1fr)}.form-card,.result-card{padding:22px}.small-note{display:none}.heading-label{display:none}.promo-toggle{gap:10px;padding:15px 12px}.promo-copy small{font-size:8px}.gift-label{font-size:8px}.bonus-badge{font-size:14px}.expiry-block>strong{font-size:35px}.receipt-heading .eyebrow{letter-spacing:1.5px}}
@@ -21,6 +21,11 @@
 @media(max-width:350px){.shell{padding:0 10px}.form-card,.result-card{padding:16px}.small-note,.gift-label{display:none}.brand{font-size:19px}.brand small{font-size:8px}.brand img{width:34px;height:34px}h1{font-size:24px}.day-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.day-btn small{font-size:9px}.today-display{flex-wrap:wrap}.today-display strong{font-size:12px}.today-display .pill{display:none}.promo-toggle{flex-wrap:wrap}.promo-copy{flex-basis:calc(100% - 34px)}.bonus-badge{margin-left:33px}.custom-days-row{gap:8px}.number-wrap{width:99px}.expiry-block>strong{font-size:33px}.duration-equation strong{font-size:26px}.receipt-heading{gap:9px}.timeline>div{font-size:10px;gap:7px}.count-rule p{font-size:8px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
+/* Netflix access-copy panel */
+.netflix-toggle{background:#211719;border:1px solid #62343a;color:#ffd9dc}.netflix-toggle svg{width:18px;height:18px;color:#ff7a80}.netflix-panel{margin-top:14px;padding:16px;border:1px solid #46464c;border-radius:15px;background:linear-gradient(145deg,#18181b,#121214);box-shadow:inset 0 1px #ffffff04}.netflix-panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}.netflix-panel-head strong{display:block;font-size:12px;font-weight:500}.netflix-panel-head small{display:block;color:var(--muted);font-size:9px;margin-top:3px;line-height:1.7}.netflix-badge{flex-shrink:0;border:1px solid #67353a;background:#321d20;color:#ff9ca1;border-radius:8px;padding:4px 8px;font:500 9px 'Kanit',sans-serif;letter-spacing:.7px}.netflix-fields{display:grid;grid-template-columns:1fr 1fr;gap:11px}.netflix-field label{font-size:10px;color:#c7c7cf;margin-bottom:6px}.netflix-field input,.netflix-field select{display:block;width:100%;min-width:0;min-height:44px;border:1px solid #45454b;border-radius:11px;background:#101013;color:var(--text);padding:11px 13px;font-size:12px;transition:border-color .2s,box-shadow .2s}.netflix-field select{appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:38px;background-image:linear-gradient(45deg,transparent 50%,#a9a9b2 50%),linear-gradient(135deg,#a9a9b2 50%,transparent 50%);background-position:calc(100% - 17px) 19px,calc(100% - 12px) 19px;background-size:5px 5px,5px 5px;background-repeat:no-repeat}.netflix-field input:focus,.netflix-field select:focus{border-color:#c85c61;outline:none}.netflix-field select option{background:#18181b;color:#f4f4f5}.netflix-field.full{grid-column:1/-1}.password-wrap{position:relative}.password-wrap input{padding-right:58px}.password-peek{position:absolute;right:7px;top:7px;bottom:7px;border:0;border-left:1px solid #3e3e44;background:transparent;color:#b8b8c1;padding:0 9px;font-size:9px}.netflix-copy{margin-top:13px}.netflix-copy svg{width:18px;height:18px}.netflix-tip{margin:10px 0 0;color:#8f8f99;font-size:9px;line-height:1.75;text-align:center}.netflix-field input[aria-invalid=true],.netflix-field select[aria-invalid=true]{border-color:var(--accent);box-shadow:0 0 0 3px #ff3b4212}.service-choice{position:relative}.service-choice:after{content:'เลือก';position:absolute;right:38px;bottom:12px;color:#6f6f78;font-size:8px;pointer-events:none}.custom-shop-wrap{margin-top:9px}
+@media(hover:hover){.netflix-toggle:hover:not(:disabled){background:#342226;border-color:#9c4b53}.password-peek:hover{color:#fff}}
+@media(max-width:480px){.netflix-fields{grid-template-columns:1fr}.netflix-panel{padding:14px}.netflix-panel-head{align-items:center}.netflix-badge{font-size:8px}}
+
 </style>
 
 </head>
@@ -28,10 +33,10 @@
 <div class="shell">
 <header class="topbar">
   <a class="brand" href="./index.html" aria-label="BIZ-G DAY หน้าหลัก"><img src="logo.png" alt="" width="44" height="44"><span>BIZ-G <b>DAY</b><small>เครื่องมือจัดการวันแพ็กเกจ</small></span></a>
-  <div class="top-right"><button id="resetBtn" class="text-button" type="button">เริ่มใหม่ <span aria-hidden="true">↺</span></button></div>
+  <div class="top-right"><span class="timezone"><i></i> คำนวณตามวันที่</span><button id="resetBtn" class="text-button" type="button">เริ่มใหม่ <span aria-hidden="true">↺</span></button></div>
 </header>
 <main>
-  <div class="page-heading"><div><h1>คำนวณวันหมดอายุ<span class="title-dot">.</span></h1><p class="subtitle">กำหนดวันเริ่ม เลือกแพ็กเกจ รับวันฟรี — ดูวันหมดอายุได้ทันที</p></div></div>
+  <div class="page-heading"><div><p class="eyebrow">PACKAGE DATE CALCULATOR</p><h1>คำนวณวันหมดอายุ<span class="title-dot">.</span></h1><p class="subtitle">กำหนดวันเริ่ม เลือกแพ็กเกจ รับวันฟรี — ดูวันหมดอายุได้ทันที</p></div><span class="heading-label">DAY ENGINE <b>02</b></span></div>
   <div class="workspace">
     <section class="form-card" aria-label="ตั้งค่าแพ็กเกจ">
       <section class="form-section">
@@ -48,7 +53,7 @@
         <div class="custom-days-row"><label for="customDays">หรือระบุจำนวนวันเอง</label><div class="number-wrap"><input type="number" id="customDays" min="1" max="36500" step="1" inputmode="numeric" placeholder="เช่น 15" aria-label="จำนวนวันแพ็กเกจ กำหนดเอง"><span>วัน</span></div></div>
       </section>
       <section class="form-section promo-section">
-        <div class="section-heading"><span class="step">03</span><h2>เพิ่มวันจากโปรโมชั่น</h2></div>
+        <div class="section-heading"><span class="step">03</span><h2>เพิ่มวันจากโปรโมชั่น</h2><span class="gift-label">BONUS DAYS</span></div>
         <label class="promo-toggle" for="promoEnabled"><input type="checkbox" id="promoEnabled" aria-controls="promoDetails"><span class="checkbox-art" aria-hidden="true">✓</span><span class="promo-copy"><strong>รับโปรแถมวันฟรี</strong><small>ไม่ติ๊ก = วันปกติ · ติ๊ก = เพิ่มวันฟรี</small></span><span class="bonus-badge" id="promoBadge">+1 วัน</span></label>
         <div id="promoDetails" class="promo-details" hidden><label for="promoDays">จำนวนวันฟรีที่ได้รับ</label><div class="number-wrap"><input type="number" id="promoDays" value="1" min="1" max="36500" step="1" inputmode="numeric"><span>วัน</span></div><p class="field-help">บวกเพิ่มจากแพ็กเกจเพียงครั้งเดียว เปลี่ยนจำนวนหรือเอาติ๊กออกได้</p></div>
       </section>
@@ -56,7 +61,7 @@
     </section>
     <aside class="result-column" aria-label="ผลการคำนวณ">
       <section class="result-card">
-        
+        <div class="receipt-heading"><span class="eyebrow">PACKAGE SUMMARY</span><span class="live-label"><i></i> คำนวณอัตโนมัติ</span></div>
         <h2>สรุปวันใช้งาน</h2>
         <div class="result-state" id="resultState" role="status" aria-live="polite" aria-atomic="true">
           <div class="expiry-block"><span id="expiryLabel">วันหมดอายุ</span><strong id="resultExpire">—</strong><span id="expireLong" class="expire-long">เลือกแพ็กเกจเพื่อเริ่มคำนวณ</span></div>
@@ -65,28 +70,32 @@
           <p class="calculation-note" id="calculationNote">ผลลัพธ์จะแสดงเมื่อเลือกจำนวนวัน</p>
         </div>
         <p class="error-message" id="formError" role="alert" hidden></p>
-        <div class="copy-actions"><button id="copyDateBtn" class="primary-button" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="3"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg> คัดลอกวันหมดอายุ</button><button id="copyDayOnlyBtn" class="secondary-button" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="3"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg> คัดลอกวันและเดือน</button></div>
-        <div id="manualCopyWrap" hidden><label for="manualCopy">เลือกข้อความแล้วคัดลอกด้วยตนเอง</label><textarea id="manualCopy" readonly rows="6"></textarea></div>
-        </section>
+        <div class="copy-actions"><button id="copyDateBtn" class="primary-button" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="3"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg> คัดลอกวันหมดอายุ</button><button id="copyDayOnlyBtn" class="secondary-button" type="button" disabled>คัดลอกวันและเดือน</button><button id="netflixToggleBtn" class="secondary-button netflix-toggle" type="button" disabled aria-expanded="false" aria-controls="netflixAccessPanel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M8 19v2m8-2v2M8 9h8m-8 4h5"/></svg> ข้อมูลเข้าใช้งาน / เลือกแพลตฟอร์ม</button></div>
+        <div id="netflixAccessPanel" class="netflix-panel" hidden>
+          <div class="netflix-panel-head"><div><strong>กรอกข้อมูลเข้าใช้งาน</strong><small>เลือกแพลตฟอร์มและร้าน แล้วกรอกข้อมูลลูกค้า วันเริ่ม/วันหมดจะดึงจากผลคำนวณอัตโนมัติ</small></div><span id="serviceBadge" class="netflix-badge">NETFLIX 🎬</span></div>
+          <div class="netflix-fields">
+            <div class="netflix-field service-choice"><label for="serviceCategory">หมวดหมู่</label><select id="serviceCategory" autocomplete="off"><option value="netflix">Netflix</option><option value="prime">Prime Video</option><option value="disney">Disney+</option><option value="hbomax">HBO MAX</option><option value="iqiyi">iQIYI</option><option value="wetv">WeTV</option><option value="viu">Viu</option><option value="youtube">YouTube Premium</option></select></div>
+            <div class="netflix-field service-choice"><label for="shopSelect">ร้าน</label><select id="shopSelect" autocomplete="off"><option value="BIZ-G">BIZ-G</option><option value="BIZ-G">Arther Shop</option><option value="JOKE">JOKE MOO</option><option value="MA-BEL">MA-BEL</option><option value="custom">กำหนดเอง</option></select><div id="customShopWrap" class="custom-shop-wrap" hidden><input id="customShopName" type="text" autocomplete="off" maxlength="60" placeholder="กรอกชื่อร้าน"></div></div>
+            <div class="netflix-field"><label for="netflixEmail">อีเมล</label><input id="netflixEmail" type="email" inputmode="email" autocomplete="off" placeholder="name@example.com"></div>
+            <div class="netflix-field"><label for="netflixPassword">รหัสผ่าน</label><div class="password-wrap"><input id="netflixPassword" type="password" autocomplete="off" placeholder="กรอกรหัสผ่าน"><button id="passwordPeekBtn" class="password-peek" type="button" aria-label="แสดงรหัสผ่าน">แสดง</button></div></div>
+            <div class="netflix-field"><label for="netflixPin">PIN</label><input id="netflixPin" type="text" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="เช่น 1234"></div>
+            <div class="netflix-field"><label for="netflixScreen">เลขจอ / ผู้ใช้งาน</label><input id="netflixScreen" type="text" autocomplete="off" maxlength="40" placeholder="เช่น 1"></div>
+          </div>
+          <button id="copyNetflixBtn" class="primary-button netflix-copy" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="3"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg> <span id="copyServiceLabel">คัดลอกข้อมูล NETFLIX</span></button>
+          <p class="netflix-tip">คัดลอกสำเร็จแล้ว ระบบจะล้างข้อมูลเข้าใช้งานและปิดหน้ากรอกให้อัตโนมัติ</p>
+        </div>
+        <div id="manualCopyWrap" hidden><label for="manualCopy">เลือกข้อความแล้วคัดลอกด้วยตนเอง</label><textarea id="manualCopy" readonly rows="10"></textarea></div>
+        <p class="receipt-footer">พร้อมนำไปแจ้งลูกค้าหรือบันทึกลงชีต</p>
+      </section>
       <div class="how-it-works"><span class="info-icon" aria-hidden="true">i</span><div><h3>วันจริง ตามปฏิทินจริง</h3><p>ข้ามเดือน ข้ามปี และวันที่ 29 กุมภาพันธ์อัตโนมัติ ปุ่มแพ็กเกจใช้จำนวนวันตามที่แสดง วันฟรีเพิ่มจากวันที่สิ้นสุดปกติเมื่อเลือกโปร</p></div></div>
     </aside>
   </div>
 </main>
-<footer class="footer">
-  <span>BIZ-G DAY <span class="footer-dot">·</span> คำนวณวันครบ พร้อมทุกแพ็กเกจ</span>
-  <details class="support">
-    <summary>ลิงก์และติดต่อผู้พัฒนา <span aria-hidden="true">↗</span></summary>
-    <nav aria-label="ลิงก์เดิมของเว็บไซต์">
-      <a href="https://docs.google.com/spreadsheets/d/1_ulE4CrKnsCjlzyz0N-n94yEep1OsQub7LBgUbSLDUs/edit?pli=1&gid=289997355#gid=289997355" target="_blank" rel="noopener noreferrer">Sheet BIZ-G ↗</a>
-      <a href="https://biz-g.shop/admin-spin" target="_blank" rel="noopener noreferrer">BIZ-G CODE ↗</a>
-      <a href="https://www.facebook.com/bank.kub.448958" target="_blank" rel="noopener noreferrer">Facebook ผู้พัฒนา ↗</a>
-      <button id="discordBtn" type="button">คัดลอก Discord</button>
-    </nav>
-  </details>
-</footer>
+<footer class="footer"><span>BIZ-G DAY <span class="footer-dot">·</span> คำนวณวันครบ พร้อมทุกแพ็กเกจ</span><details class="support"><summary>ลิงก์และติดต่อผู้พัฒนา <span aria-hidden="true">↗</span></summary><nav aria-label="ลิงก์เดิมของเว็บไซต์"><a href="https://docs.google.com/spreadsheets/d/1_ulE4CrKnsCjlzyz0N-n94yEep1OsQub7LBgUbSLDUs/edit?pli=1&gid=289997355#gid=289997355" target="_blank" rel="noopener noreferrer">Sheet BIZ-G ↗</a><a href="https://biz-g.shop/admin-spin" target="_blank" rel="noopener noreferrer">BIZ-G CODE ↗</a><a href="https://www.facebook.com/bank.kub.448958" target="_blank" rel="noopener noreferrer">Facebook ผู้พัฒนา ↗</a><button id="discordBtn" type="button">คัดลอก Discord</button></nav></details></footer>
 </div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script>
+/* Calendar dates are represented at UTC midnight; no browser timezone/DST drift. */
 (function (root) {
   'use strict';
   const DAY = 86400000;
@@ -118,6 +127,10 @@
     const startDate = parseDate(start);
     const base = integer(days, 'จำนวนวันแพ็กเกจ');
     const bonus = promoEnabled === true ? integer(promoDays, 'จำนวนวันฟรี') : 0;
+    // Preserve the supplied original calculator: one day adds one day;
+    // all larger packages count the start date as day one.
+    // Apply promotion AFTER the base calculation so every bonus adds a date,
+    // including the special one-day package. Never recalculate from base+bonus.
     const baseOffset = base === 1 ? 1 : base - 1;
     const offset = baseOffset + bonus;
     return { start: startDate, end: addDays(startDate, offset), base, bonus, total: base + bonus, offset };
@@ -141,6 +154,8 @@ let lastResultKey = null;
 const reducedMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : {matches:true};
 const packages = [[1,'แพ็กเกจ 1 วัน'],[3,'แพ็กเกจ 3 วัน'],[7,'1 สัปดาห์'],[14,'2 สัปดาห์'],[30,'แพ็กเกจ 30 วัน'],[60,'แพ็กเกจ 60 วัน'],[90,'แพ็กเกจ 90 วัน'],[365,'แพ็กเกจ 365 วัน']];
 const extraPackages = [120,150,180,210,240,270,300,330].map(days => [days,`แพ็กเกจ ${days} วัน`]);
+const services = {netflix:{name:'NETFLIX',emoji:'🎬'},prime:{name:'Prime Video',emoji:'🎞️'},disney:{name:'Disney+',emoji:'✨'},hbomax:{name:'HBO MAX',emoji:'🎬'},iqiyi:{name:'iQIYI',emoji:'🎥'},wetv:{name:'WeTV',emoji:'📺'},viu:{name:'Viu',emoji:'📺'},youtube:{name:'YouTube Premium',emoji:'▶️'}};
+let copyAudioContext = null;
 function makePackages(items, parent) {
   items.forEach(([days, caption]) => {
     const button = document.createElement('button');
@@ -203,13 +218,38 @@ function render() {
     lastResultKey = null;
     text('expireLong','กรุณาตรวจสอบข้อมูลที่กรอก'); text('calculationNote','ยังคำนวณไม่ได้ กรุณาแก้ข้อมูลที่แจ้งด้านล่าง');
   }
-  $('copyDateBtn').disabled = !result; $('copyDayOnlyBtn').disabled = !result;
+  $('copyDateBtn').disabled = !result; $('copyDayOnlyBtn').disabled = !result; $('netflixToggleBtn').disabled = !result; $('copyNetflixBtn').disabled = !result;
 }
 function showToast(message) {
   clearTimeout(toastTimer); text('toast', message); $('toast').classList.add('show');
   toastTimer = setTimeout(() => $('toast').classList.remove('show'), 3000);
 }
+function prepareCopySound() {
+  try {
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtx) return;
+    if (!copyAudioContext) copyAudioContext = new AudioCtx();
+    if (copyAudioContext.state === 'suspended') copyAudioContext.resume().catch(() => {});
+  } catch (_) { /* เสียงเป็นฟีเจอร์เสริม ถ้าเบราว์เซอร์ไม่รองรับให้ข้าม */ }
+}
+function playCopySound() {
+  try {
+    if (!copyAudioContext || copyAudioContext.state !== 'running') return;
+    const now = copyAudioContext.currentTime;
+    const gain = copyAudioContext.createGain();
+    gain.gain.setValueAtTime(0.0001, now);
+    gain.gain.exponentialRampToValueAtTime(0.12, now + 0.012);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.19);
+    gain.connect(copyAudioContext.destination);
+    [740, 980].forEach((freq, index) => {
+      const osc = copyAudioContext.createOscillator();
+      osc.type = 'sine'; osc.frequency.setValueAtTime(freq, now + index * 0.055);
+      osc.connect(gain); osc.start(now + index * 0.055); osc.stop(now + 0.19);
+    });
+  } catch (_) { /* ไม่ให้เสียงรบกวนการคัดลอก */ }
+}
 async function copyText(value) {
+  prepareCopySound();
   let copied = false;
   try { if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') { await navigator.clipboard.writeText(value); copied = true; } } catch (_) { /* Fall through for local files and denied clipboard access. */ }
   if (!copied) {
@@ -219,17 +259,88 @@ async function copyText(value) {
     try { area.focus(); area.select(); copied = document.execCommand('copy') === true; } catch (_) { copied = false; }
     finally { area.remove(); if (active && typeof active.focus === 'function') active.focus(); }
   }
-  if (copied) { showToast('คัดลอกเรียบร้อยแล้ว'); return true; }
+  if (copied) { playCopySound(); showToast('คัดลอกเรียบร้อยแล้ว'); return true; }
   $('manualCopyWrap').hidden = false; $('manualCopy').value = value; $('manualCopy').focus(); $('manualCopy').select();
   showToast('คัดลอกอัตโนมัติไม่ได้ กรุณาคัดลอกจากช่องข้อความ');
   return false;
 }
-function resetAfterCopy() {
-  // คงจำนวนวันแพ็กเกจเดิมไว้ รีเซ็ตเฉพาะโปรโมชั่น
+function resetAfterCopy(options = {}) {
+  // คงแพ็กเกจที่เลือกไว้ตามเดิม รีเซ็ตโปรหลังคัดลอกสำเร็จ
+  const hadPromo = $('promoEnabled').checked;
   $('promoEnabled').checked = false;
   $('promoDays').value = '1';
+  if (options.access === true) resetAccessForm();
   render();
-  showToast('คัดลอกเรียบร้อยแล้ว · ปิดโปรและรีเซ็ตวันฟรีเป็น 1 วันแล้ว');
+  showToast(options.access === true ? 'คัดลอกแล้ว · ล้างข้อมูลเข้าใช้งานเรียบร้อย' : (hadPromo ? 'คัดลอกเรียบร้อยแล้ว · ปิดโปรและคืนวันฟรีเป็น 1 วันแล้ว' : 'คัดลอกเรียบร้อยแล้ว'));
+}
+function selectedService() {
+  return services[$('serviceCategory').value] || services.netflix;
+}
+function selectedShop() {
+  if ($('shopSelect').value === 'custom') return $('customShopName').value.trim();
+  return $('shopSelect').value.trim();
+}
+function updateServiceUI() {
+  const service = selectedService();
+  text('serviceBadge', `${service.name} ${service.emoji}`);
+  text('copyServiceLabel', `คัดลอกข้อมูล ${service.name}`);
+  const custom = $('shopSelect').value === 'custom';
+  $('customShopWrap').hidden = !custom;
+  if (!custom) $('customShopName').removeAttribute('aria-invalid');
+}
+function resetAccessForm() {
+  $('serviceCategory').value = 'netflix';
+  $('shopSelect').value = 'BIZ-G';
+  $('customShopName').value = '';
+  ['netflixEmail','netflixPassword','netflixPin','netflixScreen'].forEach(id => { $(id).value = ''; $(id).removeAttribute('aria-invalid'); });
+  $('customShopName').removeAttribute('aria-invalid');
+  $('netflixPassword').type = 'password';
+  text('passwordPeekBtn','แสดง');
+  $('passwordPeekBtn').setAttribute('aria-label','แสดงรหัสผ่าน');
+  $('netflixAccessPanel').hidden = true;
+  $('netflixToggleBtn').setAttribute('aria-expanded','false');
+  updateServiceUI();
+}
+function netflixMessage() {
+  if (!result) return null;
+  const fields = ['netflixEmail','netflixPassword','netflixPin','netflixScreen'];
+  let firstInvalid = null;
+  fields.forEach(id => {
+    const input = $(id);
+    const invalid = input.value.trim() === '';
+    if (invalid && !firstInvalid) firstInvalid = input;
+    if (invalid) input.setAttribute('aria-invalid','true'); else input.removeAttribute('aria-invalid');
+  });
+  const shop = selectedShop();
+  if (!shop) {
+    $('customShopName').setAttribute('aria-invalid','true');
+    if (!firstInvalid) firstInvalid = $('customShopName');
+  } else $('customShopName').removeAttribute('aria-invalid');
+  if (firstInvalid) {
+    firstInvalid.focus();
+    showToast('กรุณากรอกข้อมูลเข้าใช้งานและชื่อร้านให้ครบ');
+    return null;
+  }
+  const service = selectedService();
+  const email = $('netflixEmail').value.trim();
+  const password = $('netflixPassword').value;
+  const pin = $('netflixPin').value.trim();
+  const screen = $('netflixScreen').value.trim();
+  return `ข้อมูลเข้าใช้งาน ${service.name}${service.emoji}
+ของคุณพี่โดยเฉพาะ 🥰
+
+✅ เริ่ม : [ ${D.format(result.start)} ]
+❌ หมด : [ ${D.format(result.end)} ] 
+
+📧 อีเมล : ${email}
+🔑 รหัสผ่าน : ${password}
+🔒 PIN : ${pin}
+📺  ผู้ใช้งาน : ${shop} l ${screen}
+
+✨ ใช้งานได้เลยทันที ดูได้ทุกอุปกรณ์ คมชัด 4K + HDR
+❗ กรุณาเก็บข้อมูลนี้เป็นความลับเพื่อความปลอดภัย
+
+ขอบคุณที่ใช้บริการ❤️ ขอให้สนุกกับการดูหนังและซีรีส์น้าา 🍿🎬`;
 }
 
 makePackages(packages, 'dayGrid'); makePackages(extraPackages, 'extraDays');
@@ -241,6 +352,38 @@ $('customDays').addEventListener('input', () => { selectedDays = null; render();
 $('promoEnabled').addEventListener('change', render);
 $('promoDays').addEventListener('input', render);
 $('moreDaysBtn').addEventListener('click', () => { const expanded = $('extraDays').hidden; $('extraDays').hidden = !expanded; $('moreDaysBtn').setAttribute('aria-expanded',String(expanded)); text('moreDaysBtn', expanded ? 'ซ่อนแพ็กเกจระยะยาว −' : 'แพ็กเกจระยะยาว ＋'); });
+$('netflixToggleBtn').addEventListener('click', () => {
+  render();
+  if (!result) return;
+  const panel = $('netflixAccessPanel');
+  const willOpen = panel.hidden;
+  panel.hidden = !willOpen;
+  $('netflixToggleBtn').setAttribute('aria-expanded', String(willOpen));
+  if (willOpen) {
+    panel.scrollIntoView({behavior: reducedMotion.matches ? 'auto' : 'smooth', block:'nearest'});
+    setTimeout(() => $('netflixEmail').focus(), reducedMotion.matches ? 0 : 180);
+  }
+});
+$('serviceCategory').addEventListener('change', updateServiceUI);
+$('shopSelect').addEventListener('change', () => { updateServiceUI(); if ($('shopSelect').value === 'custom') setTimeout(() => $('customShopName').focus(), 0); });
+$('customShopName').addEventListener('input', () => $('customShopName').removeAttribute('aria-invalid'));
+$('passwordPeekBtn').addEventListener('click', () => {
+  const input = $('netflixPassword');
+  const showing = input.type === 'text';
+  input.type = showing ? 'password' : 'text';
+  text('passwordPeekBtn', showing ? 'แสดง' : 'ซ่อน');
+  $('passwordPeekBtn').setAttribute('aria-label', showing ? 'แสดงรหัสผ่าน' : 'ซ่อนรหัสผ่าน');
+  input.focus();
+});
+['netflixEmail','netflixPassword','netflixPin','netflixScreen'].forEach(id => {
+  $(id).addEventListener('input', () => $(id).removeAttribute('aria-invalid'));
+});
+$('copyNetflixBtn').addEventListener('click', async () => {
+  render();
+  const value = netflixMessage();
+  if (!value) return;
+  if (await copyText(value)) resetAfterCopy({access:true});
+});
 $('copyDateBtn').addEventListener('click', async () => {
   render();
   if (!result) return;
@@ -255,16 +398,18 @@ $('copyDayOnlyBtn').addEventListener('click', async () => {
   const value = `${day}/${month}`;
   if (await copyText(value)) resetAfterCopy();
 });
+$('discordBtn').addEventListener('click', () => copyText('Bankkizz._'));
 $('resetBtn').addEventListener('click', () => {
   isTodayMode = true; selectedDays = 7; $('startDate').value = D.today(); $('customDays').value = '';
   $('promoEnabled').checked = false; $('promoDays').value = '1';
+  resetAccessForm();
   $('extraDays').hidden = true; $('moreDaysBtn').setAttribute('aria-expanded','false'); text('moreDaysBtn','แพ็กเกจระยะยาว ＋'); render(); showToast('เริ่มใหม่แล้ว พร้อมคำนวณแพ็กเกจ 7 วัน');
 });
-$('discordBtn').addEventListener('click', () => copyText('Bankkizz._'));
 function refreshToday() { const next = D.today(); if (next !== knownToday) { knownToday = next; render(); } }
 setInterval(refreshToday, 30000);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshToday(); });
 window.addEventListener('focus', refreshToday);
+updateServiceUI();
 render();
 
 </script>
